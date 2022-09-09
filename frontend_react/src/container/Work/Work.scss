@@ -44,14 +44,17 @@
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 
+  .app__work-item-outer {
+    display: flex;
+    margin: 2rem;
+    align-items: unset;
+  }
   .app__work-item {
     width: 270px;
     flex-direction: column;
+    flex-grow: 1;
 
-    margin: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: #fff;
